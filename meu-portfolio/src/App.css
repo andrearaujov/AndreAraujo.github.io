@@ -1,0 +1,177 @@
+/* app.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset básico para remover margens e paddings padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e cores globais */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Classes utilitárias */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #555;
+}
+
+/* Estilos para a NavBar */
+.navbar {
+  background-color: #222;
+  padding: 15px 0;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #1e90ff;
+}
+
+/* Estilos para a Home */
+.home-container {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #1e90ff;
+}
+
+.home-container h1 {
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+.home-container h2 {
+  font-size: 24px;
+  color: #555;
+}
+
+/* Estilos para as páginas de Skills */
+.skills-container {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.skills-container ul {
+  list-style: none;
+  display: inline-block;
+  text-align: left;
+}
+
+.skills-container li {
+  font-size: 20px;
+  margin: 10px 0;
+  position: relative;
+  padding-left: 25px;
+}
+
+.skills-container li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #1e90ff;
+}
+
+/* Estilos para a página de Projetos */
+.projetos-container {
+  padding: 50px 0;
+}
+
+.projetos-container ul {
+  list-style: none;
+  text-align: center;
+}
+
+.projetos-container li {
+  margin: 20px 0;
+}
+
+.projetos-container a {
+  font-size: 22px;
+}
+
+.projetos-container a:hover {
+  color: #1e90ff;
+}
+
+/* Estilos para o Footer */
+.footer {
+  background-color: #222;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  margin: 0 15px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #1e90ff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .skills-container ul {
+    width: 100%;
+  }
+
+  .home-container h1 {
+    font-size: 36px;
+  }
+
+  .home-container h2 {
+    font-size: 20px;
+  }
+}

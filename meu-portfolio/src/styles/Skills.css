@@ -1,0 +1,18 @@
+.skills-container {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .skills-container h1 {
+    margin-bottom: 30px;
+  }
+  
+  .skills-container ul {
+    list-style-type: none;
+    font-size: 18px;
+  }
+  
+  .skills-container li {
+    margin: 10px 0;
+  }
+  

@@ -1,0 +1,14 @@
+.sobre-mim-container {
+    padding: 50px;
+  }
+  
+  .sobre-mim-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .sobre-mim-container p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
