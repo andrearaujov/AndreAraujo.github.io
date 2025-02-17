@@ -1,27 +1,45 @@
 .projetos-container {
-    padding: 50px;
-  }
-  
-  .projetos-container h1 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .projetos-container ul {
-    list-style-type: none;
-    font-size: 18px;
-  }
-  
-  .projetos-container li {
-    margin: 15px 0;
-  }
-  
-  .projetos-container a {
-    text-decoration: none;
-    color: #1e90ff;
-  }
-  
-  .projetos-container a:hover {
-    color: #555;
-  }
-  
+  padding: 50px;
+}
+
+.projetos-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke:1px #920e0e;
+}
+
+/* Exibe os projetos em um layout de grid */
+.projetos-container ul {
+  list-style-type: none;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Cada card de projeto */
+.projetos-container li {
+  background: rgba(0, 0, 0, 0.5); /* Fundo branco com 50% de transparência */
+  border: 2px solid rgba(194, 0, 0, 0.7); /* Borda suave */
+  border-radius: 10px; /* Cantos arredondados */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leve sombra para destacar */
+  backdrop-filter: blur(5px); /* Aplica um desfoque no fundo (efetivo em navegadores que suportam) */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projetos-container li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.projetos-container a {
+  text-decoration: none;
+  color: #faf2f2;
+}
+
+.projetos-container a:hover {
+  color: #555;
+}

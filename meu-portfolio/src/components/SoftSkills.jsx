@@ -11,9 +11,21 @@ function SoftSkills() {
         <li>Trabalho em Equipe</li>
         <li>Resolução de Problemas</li>
         <li>Adaptabilidade</li>
+        <li>Pensamento Crítico</li>
+        <li>Proatividade</li>
+        <li>Gestão de Tempo</li>
+        <li>Empatia</li>
+        <li>Aprendizado Contínuo</li>
+        <li>Inteligência Emocional</li>
+        <li>Resiliência</li>
+        <li>Habilidade de Tomada de Decisão</li>
+        <li>Ética Profissional</li>
+        <li>Liderança</li>
+        <li>Autogestão</li>
       </ul>
     </div>
   );
 }
+
 
 export default SoftSkills;

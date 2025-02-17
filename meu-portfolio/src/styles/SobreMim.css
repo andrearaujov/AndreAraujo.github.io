@@ -5,10 +5,14 @@
   .sobre-mim-container h1 {
     text-align: center;
     margin-bottom: 30px;
+    -webkit-text-fill-color: white;
+  -webkit-text-stroke:1px #920e0e;
   }
   
   .sobre-mim-container p {
     font-size: 18px;
     line-height: 1.6;
+    color: #f7f7f7ea;
   }
   
+

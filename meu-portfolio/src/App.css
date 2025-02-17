@@ -1,6 +1,10 @@
 /* app.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* app.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* Reset básico para remover margens e paddings padrão */
 * {
   margin: 0;
@@ -15,7 +19,21 @@ body {
   color: #333;
 }
 
-/* Classes utilitárias */
+/* Estilo para o vídeo de fundo */
+.background-video {
+  position: fixed;    /* Fixa o vídeo em relação à viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Faz com que o vídeo cubra toda a tela */
+  z-index: -1;        /* Posiciona o vídeo atrás de todos os elementos */
+}
+
+
+
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;

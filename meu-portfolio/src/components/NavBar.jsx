@@ -1,7 +1,6 @@
-// src/components/NavBar.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/NavBar.css'; // Certifique-se de criar este arquivo para estilização
+import '../styles/NavBar.css'; 
 
 function NavBar() {
   return (

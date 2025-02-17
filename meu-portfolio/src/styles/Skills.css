@@ -5,11 +5,14 @@
   
   .skills-container h1 {
     margin-bottom: 30px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke:1px #920e0e;
   }
   
   .skills-container ul {
     list-style-type: none;
     font-size: 18px;
+    color: #ececec;
   }
   
   .skills-container li {

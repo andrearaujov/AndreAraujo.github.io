@@ -1,5 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import bgVideo from './assets/background.mp4'; 
+import './app.css';
 
 // Importe seus componentes
 import Home from './components/Home';
@@ -14,6 +16,13 @@ function App() {
   return (
     <BrowserRouter basename="/meu-portfolio/">
       <div className="App">
+        {/* Vídeo de fundo */}
+        <video autoPlay muted loop className="background-video">
+          <source src={bgVideo} type="video/mp4" />
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+
+        {/* Conteúdo principal */}
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
